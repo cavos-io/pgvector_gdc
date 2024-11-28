@@ -1,6 +1,9 @@
 # Use the official Golang image
 FROM golang:1.23-alpine
 
+# Install curl
+RUN apk add --no-cache curl
+
 # Set working directory
 WORKDIR /app
 

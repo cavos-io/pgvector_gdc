@@ -20,6 +20,7 @@ func main() {
 	mux.HandleFunc("/capabilities", api.CapabilitiesHandler)
 	mux.HandleFunc("/schema", api.SchemaHandler)
 	mux.HandleFunc("/query", api.QueryHandler)
+	mux.HandleFunc("/health", api.HealthHandler)
 
 	// Wrap routes with logging middleware
 	loggedRouter := utils.LoggingMiddleware(mux)
