@@ -1,2 +1,3 @@
 # pgvector_gdc
-Data connector for pgvector
+
+Un-official data connector for Pgvector
